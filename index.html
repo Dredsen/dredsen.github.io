@@ -1,1 +1,119 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dredsen's Stuff</title>
+    <!-- Import the classic "Press Start 2P" pixel font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        /* --- Basic Setup --- */
+        body {
+            background-color: #000; /* Classic black background */
+            color: #00FF00; /* Bright green text like an old monitor */
+            font-family: 'Press Start 2P', cursive; /* The perfect retro game font */
+            display: flex; /* Using flexbox to center the content */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Make the body fill the entire screen height */
+            margin: 0;
+            text-align: center;
+            padding: 1rem;
+            box-sizing: border-box;
+            overflow: hidden; /* Hide any potential scrollbars */
+        }
+
+        /* --- CRT Screen Effects --- */
+        body::before {
+            /* This pseudo-element creates the scanline effect */
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                to bottom,
+                transparent 0,
+                transparent 2px,
+                rgba(0, 0, 0, 0.4) 3px,
+                rgba(0, 0, 0, 0.4) 4px
+            );
+            pointer-events: none; /* Allows you to click through the overlay */
+            z-index: 2;
+        }
+
+        /* --- Text Styling & Animation --- */
+        .text-container {
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+            line-height: 1.7;
+            text-shadow: 
+                0 0 5px #00FF00,
+                0 0 10px #00FF00,
+                0 0 20px #00FF00; /* Creates a nice glow effect */
+            animation: text-flicker 4s linear infinite; /* Subtle flickering animation */
+        }
+
+        /* --- Keyframe Animations --- */
+        @keyframes text-flicker {
+            0% { opacity: 1; }
+            3% { opacity: 0.8; }
+            6% { opacity: 1; }
+            7% { opacity: 0.6; }
+            8% { opacity: 1; }
+            80% { opacity: 1; }
+            82% { opacity: 0.9; }
+            84% { opacity: 1; }
+            98% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="text-container">
+        <h1 id="game-quote"></h1>
+    </div>
+
+    <script>
+        // --- Random Phrase Logic ---
+        const phrases = [
+            "Have you tried not fighting the final boss at level 1?",
+            "The princess is in another castle.",
+            "The princess is in another castle.",
+            "It's dangerous to go alone! Take this.",
+            "Do a barrel roll!",
+            "Stay awhile and listen.",
+            "A winner is you.",
+            "War... War never changes.",
+            "FINISH HIM!",
+            "The cake is a lie.",
+            "Would you kindly?",
+            "All your base are belong to us.",
+            "I used to be an adventurer like you...<br>then I took an arrow in the knee.",
+            "Hey! Listen!",
+            "You have died of dysentery.",
+            "It's super effective!",
+        ];
+
+        // This function runs when the page is fully loaded
+        window.onload = function() {
+            // Get the h1 element where the text will go
+            const quoteElement = document.getElementById('game-quote');
+            
+            // Pick a random phrase from the array
+            const randomIndex = Math.floor(Math.random() * phrases.length);
+            const randomPhrase = phrases[randomIndex];
+            
+            // Set the h1 element's content to the random phrase
+            quoteElement.innerHTML = randomPhrase;
+        };
+    </script>
+</body>
+</html>
+
