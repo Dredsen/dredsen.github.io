@@ -9,12 +9,12 @@
     "slug": "reporting-vulnerable-drivers",
     "title": "How to Report a Vulnerable Driver and Get a CVE",
     "date": "2026-05-02",
-    "summary": "A plain-English walkthrough for beginners — who to report to, how coordinated disclosure works, and how to request a CVE number from MITRE."
+    "summary": "A plain-English walkthrough for beginners - who to report to, how coordinated disclosure works, and how to request a CVE number from MITRE."
   },
   {
     "slug": "hello-world",
     "title": "Hello World",
     "date": "2026-05-01",
-    "summary": "First post — who I am, why this blog exists, and what to expect."
+    "summary": "First post - who I am, why this blog exists, and what to expect."
   }
 ]
