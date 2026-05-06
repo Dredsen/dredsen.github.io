@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Field notes on exploits, reverse engineering, and farming bugs for fun and CVEs.">
+  <meta name="color-scheme" content="dark">
+  <title>// 0xDEADBEEF</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="site-header">
+      <h1><a href="./">// 0xDEADBEEF</a></h1>
+      <p class="tagline">$ whoami &mdash; field notes on exploits, reverse engineering, and farming bugs for fun and CVEs.</p>
+    </header>
+
+    <ul id="post-list" class="post-list">
+      <li class="empty">Loading posts&hellip;</li>
+    </ul>
+
+    <footer class="site-footer">
+      <button type="button" id="easter-egg" class="easter-egg" aria-label="play easter egg">All your base are belong to us</button>
+    </footer>
+  </main>
+
+  <div id="egg-modal" class="egg-modal" hidden>
+    <div class="egg-modal__backdrop" data-egg-close></div>
+    <div class="egg-modal__content" role="dialog" aria-modal="true" aria-label="easter egg">
+      <button type="button" class="egg-modal__close" data-egg-close aria-label="close">&times;</button>
+      <video id="egg-video" class="egg-modal__video" src="assets/video/allYourBaseBelongToUs.mp4" controls playsinline></video>
+    </div>
+  </div>
+
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/easter-egg.js"></script>
+</body>
+</html>
