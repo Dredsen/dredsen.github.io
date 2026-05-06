@@ -1,8 +1,20 @@
 [
   {
+    "slug": "fada64-physical-memory-read",
+    "title": "FADA64.sys - Arbitrary Physical Memory Read via Unauthenticated IOCTL",
+    "date": "2026-05-03",
+    "summary": "Broadcom Frame Access Driver exposes an arbitrary physical memory read to any user via a NULL DACL device and unauthenticated IOCTL. Confirmed read-only, no write primitive."
+  },
+  {
+    "slug": "reporting-vulnerable-drivers",
+    "title": "How to Report a Vulnerable Driver and Get a CVE",
+    "date": "2026-05-02",
+    "summary": "A plain-English walkthrough for beginners — who to report to, how coordinated disclosure works, and how to request a CVE number from MITRE."
+  },
+  {
     "slug": "hello-world",
     "title": "Hello World",
-    "date": "2026-05-06",
+    "date": "2026-05-01",
     "summary": "First post — who I am, why this blog exists, and what to expect."
   }
 ]

@@ -37,7 +37,7 @@
     if (meta.date) {
       const date = document.createElement('p');
       date.className = 'post-meta';
-      date.textContent = meta.date;
+      date.innerHTML = '<span class="date-chip">' + meta.date + '</span>';
       header.appendChild(date);
     }
     article.appendChild(header);

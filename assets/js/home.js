@@ -24,16 +24,17 @@
       a.textContent = p.title || p.slug;
       h2.appendChild(a);
 
-      const meta = document.createElement('p');
-      meta.className = 'post-meta';
-      meta.textContent = p.date || '';
-
       const summary = document.createElement('p');
       summary.className = 'post-summary';
       summary.textContent = p.summary || '';
 
       li.appendChild(h2);
-      li.appendChild(meta);
+      if (p.date) {
+        const meta = document.createElement('p');
+        meta.className = 'post-meta';
+        meta.innerHTML = '<span class="date-chip">' + p.date + '</span>';
+        li.appendChild(meta);
+      }
       if (p.summary) li.appendChild(summary);
       list.appendChild(li);
     }
