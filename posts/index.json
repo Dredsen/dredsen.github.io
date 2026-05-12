@@ -1,5 +1,11 @@
 [
   {
+    "slug": "algernon-four-findings",
+    "title": "Four Findings in Algernon 1.17.6 with AI fuzzing",
+    "date": "2026-05-12",
+    "summary": "Using Qwen 3.6 35B with a custom harness to find bugs on Algernon web server and finding four pre-auth issues."
+  },
+  {
     "slug": "alicesoft-jst-timezone-fix",
     "title": "Patching Alicesoft Games So They Run Outside Japan Time",
     "date": "2026-05-12",
