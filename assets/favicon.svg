@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#0d0f12"/>
+  <g font-family="ui-monospace, 'Cascadia Mono', Consolas, monospace"
+     font-size="6" font-weight="600" fill="#7dd3fc" fill-opacity="0.45">
+    <text x="6" y="14">DE AD BE EF</text>
+    <text x="6" y="22">CA FE 0D 0E</text>
+    <text x="6" y="30">DR ED CO DE</text>
+    <text x="6" y="38">FF 00 FF 00</text>
+    <text x="6" y="46">42 4C 4F 47</text>
+    <text x="6" y="54">0x DR ED 0x</text>
+  </g>
+  <g stroke="#7dd3fc" stroke-width="3" fill="#0d0f12">
+    <circle cx="38" cy="34" r="13"/>
+  </g>
+  <line x1="48" y1="44" x2="56" y2="54" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round"/>
+</svg>
