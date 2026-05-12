@@ -1,5 +1,11 @@
 [
   {
+    "slug": "alicesoft-jst-timezone-fix",
+    "title": "Patching Alicesoft Games So They Run Outside Japan Time",
+    "date": "2026-05-12",
+    "summary": "Some Alicesoft games crash unless your Windows clock is set to JST. This post explains how to patch the affected games so they run correctly in any timezone."
+  },
+  {
     "slug": "reporting-vulnerable-drivers",
     "title": "How to Report a Vulnerable Driver and Get a CVE",
     "date": "2026-05-02",
