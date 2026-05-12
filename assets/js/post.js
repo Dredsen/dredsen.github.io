@@ -46,7 +46,7 @@
     body.innerHTML = cleanHtml;
     article.appendChild(body);
 
-    document.title = meta.title + ' — // 0xDEADBEEF';
+    document.title = meta.title + ' - // 0xDRED';
   } catch (err) {
     article.innerHTML = '<p class="error">Failed to load post: ' + err.message + '</p>';
   }

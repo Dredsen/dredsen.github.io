@@ -1,4 +1,4 @@
-Welcome to **// 0xDEADBEEF** - a public notebook for someone just starting to take security research seriously as a hobby.
+Welcome to **// 0xDRED** - a public notebook for someone just starting to take security research seriously as a hobby.
 
 ## Who's writing this
 
