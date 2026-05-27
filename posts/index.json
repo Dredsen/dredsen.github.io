@@ -1,5 +1,11 @@
 [
   {
+    "slug": "openpanel-two-findings",
+    "title": "Breaking OpenPanel's Tenant Isolation",
+    "date": "2026-05-27",
+    "summary": "Two pre-auth bugs in OpenPanel main branch: a hardcoded phpMyAdmin SSO token that crosses tenant boundaries to MySQL root, and an SSRF in the preview proxy that reaches RFC1918 and cloud metadata."
+  },
+  {
     "slug": "algernon-four-findings",
     "title": "Four Findings in Algernon 1.17.6 with AI fuzzing",
     "date": "2026-05-12",
