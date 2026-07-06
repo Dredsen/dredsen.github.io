@@ -1,5 +1,29 @@
 [
   {
+    "slug": "wetty-dom-xss-file-download",
+    "title": "DOM XSS in Wetty's File Download Toast",
+    "date": "2026-07-05",
+    "summary": "A short writeup of CVE-2026-49864, a DOM XSS in Wetty where an attacker-controlled file-download filename was rendered as raw Toastify HTML."
+  },
+  {
+    "slug": "umami-two-findings",
+    "title": "Two Findings in Umami's Sessions and Access Codes",
+    "date": "2026-07-05",
+    "summary": "A short writeup of two private Umami reports: Redis-backed logout did not revoke sessions, and team access codes/share slugs were generated from predictable random state."
+  },
+  {
+    "slug": "immich-four-findings",
+    "title": "Four Findings in Immich's Shared Link and OAuth Flows",
+    "date": "2026-07-05",
+    "summary": "A short summary of four Immich issues I reported around shared-link access control, OAuth account linking, plaintext shared-link passwords, and OAuth profile-picture SSRF."
+  },
+  {
+    "slug": "cloudflare-abuse-automation-takedowns",
+    "title": "Abusing Cloudflare's Automatic Abuse Handling for Website Takedowns",
+    "date": "2026-07-05",
+    "summary": "A test against my own Cloudflare-protected free-plan domain showed how bogus abuse reports could turn into an automated malware warning."
+  },
+  {
     "slug": "openpanel-two-findings",
     "title": "Breaking OpenPanel's Tenant Isolation",
     "date": "2026-05-27",
